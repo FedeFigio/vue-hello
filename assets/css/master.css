@@ -4,7 +4,8 @@
     align-items: center;
 }
 
-img {
+img,
+span {
     margin-top: 20px;
 }
 

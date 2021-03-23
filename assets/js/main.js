@@ -7,21 +7,22 @@
 var root = new Vue({
     el: '#root',
     data: {
-        message: 'Hello World',
+        message: 'click for hide image',
         img: "https://www.venetoformazione.it/wp-content/uploads/2020/11/ottimizzare-immagini-display-retina.jpg",
-        buttonMessage: "click for show image",
-        dNone: "dNone"
+        buttonMessage: "click",
+        dNone: "",
+        counter: 0
     },
     methods: {
         show: function() {
             if (this.dNone == "") {
-
                 this.dNone = "dNone"
-                this.buttonMessage = "click for show image"
+                this.message = "click for show image"
             } else if (this.dNone == "dNone") {
                 this.dNone = ""
-                this.buttonMessage = "click for hide image"
+                this.message = "click for hide image"
             }
+            this.counter += 1
         }
     }
 })
